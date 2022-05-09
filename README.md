@@ -11,19 +11,19 @@ PDFGen
 
 以下のPDFの機能を提供します。
 * 様々なフォント/サイズ/色のテキスト
-* Primitive drawing elements
-    * Lines
-    * Rectangles
-    * Filled Rectangles
-    * Polygons
-    * Filled Polygons
-    * Bezier curves
-* Bookmarks
-* Barcodes (Code-128 & Code-39)
-* Embedded images
-    * PPM/PGM (binary format only)
+* 基本的な描画
+    * 線
+    * 短形
+    * 塗り潰された短形
+    * 多角形
+    * 塗り潰された多角形
+    * ベジェ曲線
+* ブックマーク
+* バーコード (Code-128 & Code-39)
+* 画像埋め込み
+    * PPM/PGM (バイナリ形式のみ)
     * JPEG
-    * PNG (Alpha Channels are not supported)
+    * PNG (アルファチャンネルはサポートされていません)
     * BMP
 
 サンプルプログラム
@@ -43,7 +43,7 @@ int main(void) {
     struct pdf_doc *pdf = pdf_create(PDF_A4_WIDTH, PDF_A4_HEIGHT, &info);
     pdf_set_font(pdf, "Times-Roman");
     pdf_append_page(pdf);
-    pdf_add_text(pdf, NULL, "This is text", 12, 50, 20, PDF_BLACK);
+    pdf_add_text(pdf, NULL, "これはテキストです", 12, 50, 20, PDF_BLACK);
     pdf_add_line(pdf, NULL, 50, 24, 150, 24, 3, PDF_BLACK);
     pdf_save(pdf, "output.pdf");
     pdf_destroy(pdf);
@@ -51,12 +51,12 @@ int main(void) {
 }
 ```
 
-License
+ライセンス
 =======
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-The source here is public domain.
-If you find it useful, please drop me a line at andre@ignavus.net.
+このプログラムのソースコードはパブリックドメインです。
+もし、気になる点があるようでしたら、andre@ignavus.net までご連絡ください。
 
 Builds
 ======
