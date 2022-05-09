@@ -58,7 +58,7 @@ int main(void) {
 このプログラムのソースコードはパブリックドメインです。
 もし、気になる点があるようでしたら、andre@ignavus.net までご連絡ください。
 
-Builds
+ビルド
 ======
 ビルド状況: [![GitHub Actions](https://github.com/AndreRenaud/PDFGen/workflows/Build%20and%20Test/badge.svg)](https://github.com/AndreRenaud/PDFGen/actions)
 
@@ -66,8 +66,8 @@ Builds
 
 開発進捗度: [![Coverage Status](https://coveralls.io/repos/github/AndreRenaud/PDFGen/badge.svg?branch=master)](https://coveralls.io/github/AndreRenaud/PDFGen?branch=master)
 
-Coverity scan: [![Coverity scan](https://scan.coverity.com/projects/11942/badge.svg)](https://scan.coverity.com/projects/andrerenaud-pdfgen)
+静的解析進捗度: [![Coverity scan](https://scan.coverity.com/projects/11942/badge.svg)](https://scan.coverity.com/projects/andrerenaud-pdfgen)
 
-Static Analysis
+分析
 ===============
-This is a code base that I use to test static analysis tools. As such the build system is quite a bit more complex than should be necessary for a project of this size.
+これは、私が静的解析ツールをテストするために使用しているプログラムです。そのため、ビルドシステムはこの規模のプロジェクトに必要なものよりもかなり複雑になっています。
