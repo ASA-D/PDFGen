@@ -4,13 +4,13 @@ PDFGen
 
 <a href="https://www.buymeacoffee.com/EstIgnavus" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-Simple C PDF Creation/Generation library.
-All contained a single C-file with header and no external library dependencies.
+シンプルで簡単なC言語のPDF作成/生成ライブラリ。
+ヘッダファイルを含むシングルファイルライブラリであるため、外部ライブラリへの依存はありません。
 
-Useful for embedding into other programs that require rudimentary PDF output.
+基本的なPDF出力を必要とするプログラムへの組み込みに便利です。
 
-Supports the following PDF features
-* Text of various fonts/sizes/colours
+以下のPDFの機能を提供します。
+* 様々なフォント/サイズ/色のテキスト
 * Primitive drawing elements
     * Lines
     * Rectangles
@@ -26,7 +26,7 @@ Supports the following PDF features
     * PNG (Alpha Channels are not supported)
     * BMP
 
-Example usage
+サンプルプログラム
 =============
 ```c
 #include "pdfgen.h"
